@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+:root {
+  --par: hsla(0, 0%, 100%, 0.75);
+  --head-link: hsl(0, 0%, 95%);
+  --sedans: hsl(31, 77%, 52%);
+  --suvs: hsl(184, 100%, 22%);
+  --luxury: hsl(179, 100%, 13%);
+}
+body {
+  display: grid;
+  place-items: center;
+  gap: 0;
+  font-size: 1rem;
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+}
+main {
+  max-width: 22.5rem;
+  margin: 2rem auto 0;
+  border-radius: 1rem;
+  line-height: 1.5;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+.flexitem {
+  flex: 1;
+  padding: 3rem;
+}
+h2 {
+  color: var(--head-link);
+  margin-top: 2rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+p {
+  color: var(--par);
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* first card */
+.card-container__sedans {
+  background-color: var(--sedans);
+  border-radius: 1rem 1rem 0 0;
+}
+.card-container__sedans .link {
+  color: var(--sedans);
+}
+/* second card */
+.card-container__suvs {
+  background-color: var(--suvs);
+}
+.card-container__suvs .link {
+  color: var(--suvs);
+}
+/* third card  */
+.card-container__luxury {
+  background-color: var(--luxury);
+  border-radius: 0 0 1rem 1rem;
+}
+.card-container__luxury .link {
+  color: var(--luxury);
+}
+.link {
+  display: block;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: var(--head-link);
+  width: 11.25rem;
+  border-radius: 50rem;
+  cursor: pointer;
+  border: 3px solid var(--head-link);
+}
+.link:hover,
+.link:active {
+  background-color: inherit;
+
+  color: var(--head-link);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 36rem) {
+  main {
+    max-width: 65rem;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .card-container__sedans {
+    border-radius: 1rem 0 0 1rem;
+  }
+  .card-container__luxury {
+    border-radius: 0 1rem 1rem 0;
+  }
+  .link {
+    margin-top: 10rem;
+  }
+}
