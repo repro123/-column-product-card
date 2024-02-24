@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/3-column-product-card-with-flexbox-UXLTJvUI8E)
+- Live Site URL: (https://repro123.github.io/-column-product-card/)
 
 ## My process
 
@@ -42,6 +42,5 @@ I want to learn CSS grid well, as I have been using flexbox for all my works
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/repro123)
+- Twitter - [@yourusername](https://twitter.com/Dr_Repro)
