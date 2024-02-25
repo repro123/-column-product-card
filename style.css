@@ -26,6 +26,7 @@ main {
   margin: 2rem auto 0;
   border-radius: 1rem;
   line-height: 1.5;
+  overflow: hidden;
 }
 .card-container {
   display: flex;
@@ -34,6 +35,10 @@ main {
 .flexitem {
   flex: 1;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
 }
 h2 {
   color: var(--head-link);
@@ -46,14 +51,12 @@ h2 {
 p {
   color: var(--par);
   margin-top: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
 }
-
 /* first card */
 .card-container__sedans {
   background-color: var(--sedans);
-  border-radius: 1rem 1rem 0 0;
 }
 .card-container__sedans .link {
   color: var(--sedans);
@@ -68,7 +71,6 @@ p {
 /* third card  */
 .card-container__luxury {
   background-color: var(--luxury);
-  border-radius: 0 0 1rem 1rem;
 }
 .card-container__luxury .link {
   color: var(--luxury);
@@ -77,8 +79,9 @@ p {
   display: block;
   margin-top: 2rem;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
+  margin-top: 2rem;
   text-align: center;
   padding: 1rem 2rem;
   background-color: var(--head-link);
@@ -90,8 +93,8 @@ p {
 .link:hover,
 .link:active {
   background-color: inherit;
-
   color: var(--head-link);
+  transition: all 1s;
 }
 
 .attribution {
@@ -109,13 +112,10 @@ p {
     display: flex;
     flex-direction: row;
   }
-  .card-container__sedans {
-    border-radius: 1rem 0 0 1rem;
-  }
-  .card-container__luxury {
-    border-radius: 0 1rem 1rem 0;
+  p {
+    margin-bottom: 4rem;
   }
   .link {
-    margin-top: 10rem;
+    margin-top: auto;
   }
 }
